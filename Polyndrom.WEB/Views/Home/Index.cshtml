@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Index  Polyndrom";
+}
+
+<div class="text-center">
+    <h1>@ViewBag.message</h1>
+    <form method="post" action="~/Home/Index">
+        <p>
+            <strong>Введите слово на проверку:</strong>
+            <input maxlength="25" size="40" name="wordToCheck">
+        </p>
+
+        <input type="submit" value="Проверить" />
+    </form>
+    <div class="text-center">@ViewBag.result</div>
+
+    <a asp-action="Login" asp-controller="Account">переход на страницу Login</a>
+
+</div>
